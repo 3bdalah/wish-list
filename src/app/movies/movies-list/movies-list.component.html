@@ -1,0 +1,10 @@
+<p>movies-list works!</p>
+<div *ngFor="let movie of containerAllMovies">
+<div class="card">
+    
+    <p>{{movie.title}}</p>
+    <button class="btn" (click)="handleToAddWishList(movie.id)">add to wish list </button>
+    <p [ngClass]="!movie.isAdded? 'added' : 'removed' "> added to wish list </p>
+    <button (click)="handleToRemoveFromList(movie.id)">remove wish list</button>
+</div>
+</div>

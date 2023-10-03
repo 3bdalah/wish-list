@@ -1,0 +1,13 @@
+.card{
+    width:100px;
+    /* height:100px; */
+    border:2px solid #efefef;
+    border-radius: 4px;
+}
+.added{
+    color:green;
+}
+
+.removed{
+    color:red;
+}
